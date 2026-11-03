@@ -5,7 +5,7 @@ Official GitHub Pages website for pulipuli.info, hosting public project and appl
 - Intended public URL: https://pages.pulipuli.info/
 - Repository: https://github.com/pulipulichen/pages.pulipuli.info
 - Public homepage: [index.html](./index.html)
-- Privacy policies: https://github.com/pulipulichen/Android-APP-Privacy-Policies
+- App privacy pages are published from package-name folders on this site; other policy source materials remain in https://github.com/pulipulichen/Android-APP-Privacy-Policies.
 
 ## First-time GitHub Pages setup
 
@@ -21,6 +21,14 @@ Official GitHub Pages website for pulipuli.info, hosting public project and appl
 7. Verify https://pages.pulipuli.info/ in a browser.
 
 > Add the custom domain in GitHub Pages settings **before** adding the DNS CNAME, to reduce subdomain takeover risk. This setup does not require changing DNS for `pulipuli.info` or `blog.pulipuli.info`.
+
+## App privacy pages
+
+- **Website Shortcut** (`info.pulipuli.app.websiteshortcut`): [public privacy policy](https://pages.pulipuli.info/info.pulipuli.app.websiteshortcut/)
+- **Canonical HTML source:** [Android-Website-Shortcut/google_play/privacy-policy.html](https://github.com/pulipulichen/Android-Website-Shortcut/blob/main/google_play/privacy-policy.html)
+- **Published mirror:** `info.pulipuli.app.websiteshortcut/index.html`
+
+When the policy changes, update the HTML in the Android app repository first, then copy the exact same file to this package-name folder. Keep the URL in the app's `google_play/APP_METADATA.md`, Google Play instructions, and in-app About page aligned with the published page. Verify the public URL after deployment.
 
 ## Google OAuth notes
 
