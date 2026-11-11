@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Split View Launcher, a Chrome extension for opening user-configured destinations beside the current webpage.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="canonical" href="https://pages.pulipuli.info/split-view-launcher/">
+  <title>Split View Launcher — Privacy Policy / 隱私權政策</title>
+  <style>
+    :root { font-family: system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif; color-scheme: light; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: #17322e; background: #f7faf9; line-height: 1.75; }
+    a { color: #0b7167; overflow-wrap: anywhere; text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid #14b8a6; outline-offset: 3px; }
+    .wrap { width: min(100% - 40px, 850px); margin: 0 auto; }
+    header { padding: 42px 0 36px; background: #0d5f58; color: white; }
+    header a { color: #d6fff5; }
+    .eyebrow { font-size: .84rem; letter-spacing: .12em; font-weight: 700; text-transform: uppercase; margin: 0 0 10px; }
+    h1 { font-size: clamp(1.9rem,5vw,2.7rem); line-height: 1.25; margin: 0 0 10px; }
+    .subtitle { font-size: 1.06rem; margin: 0 0 20px; color: #d9f8f0; }
+    .meta { margin: 0; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    nav a { border: 1px solid #9fe6d5; border-radius: 99px; padding: 5px 14px; text-decoration: none; }
+    main { padding: 32px 0 58px; }
+    article { background: white; border: 1px solid #d9e8e4; border-radius: 14px; padding: clamp(20px,4vw,38px); scroll-margin-top: 16px; }
+    article + article { margin-top: 28px; }
+    article h2 { margin: 0 0 10px; font-size: 1.65rem; }
+    h3 { border-top: 1px solid #d9e8e4; margin: 27px 0 10px; padding-top: 20px; font-size: 1.16rem; }
+    p { margin: 10px 0; }
+    ul { padding-left: 24px; }
+    li { margin: 7px 0; }
+    code { background: #edf5f2; padding: 1px 4px; border-radius: 4px; overflow-wrap: anywhere; }
+    .notice { border-left: 4px solid #0f766e; background: #f2faf7; padding: 12px 16px; margin: 18px 0; }
+    footer { border-top: 1px solid #d9e8e4; padding: 23px 0 30px; text-align: center; font-size: .94rem; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Pulipuli · Chrome Extension</p>
+      <h1>Split View Launcher — Privacy Policy</h1>
+      <p class="subtitle">隱私權政策 · A Chrome extension for user-configured Split View and window launching</p>
+      <p class="meta"><strong>Effective date / 生效日期:</strong> November 11, 2026 / 2026 年 11 月 11 日<br>
+        <strong>Developer / 開發者:</strong> Pulipuli Chen (pulipulichen / 布丁布丁吃布丁)<br>
+        <strong>Privacy contact / 隱私聯絡:</strong> <a href="mailto:pulipuli.chen@gmail.com">pulipuli.chen@gmail.com</a></p>
+      <nav aria-label="Policy language"><a href="#english">English</a><a href="#traditional-chinese">繁體中文</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <article id="english" lang="en" aria-labelledby="english-title">
+      <h2 id="english-title">Privacy Policy (English)</h2>
+      <h3>1. Overview</h3>
+      <p>Split View Launcher is a Chrome extension that opens a destination website configured by the user, using Chrome's Split View feature when supported or another explicitly selected window mode. Users can create profiles and insert the source tab's URL, title, or domain into a destination URL template.</p>
+      <p>No account is required. The extension does not use a developer-operated server, cloud synchronization, advertisements, analytics SDKs, or automatic telemetry. The developer does not receive your local profiles, browsing information, icons, or diagnostic records through the extension.</p>
+
+      <h3>2. Information used for extension features</h3>
+      <ul>
+        <li><strong>Source webpage details:</strong> the URL, page title, and website domain of the current tab, or a recent eligible tab when you launch a profile from Options. These values are used only to construct the destination URL and launch the requested page.</li>
+        <li><strong>Profile and preference data:</strong> profile names, destination URL templates, URL privacy choices, window modes, ordering, selected default profile, interface language, minimum window width, and custom icons or uploaded icon images.</li>
+        <li><strong>Window and display information:</strong> window identifiers, display layout and bounds, and window geometry used to create or restore explicitly requested window arrangements.</li>
+        <li><strong>Local diagnostics:</strong> up to 20 recent error entries containing a time, operation category, and error code. These entries do not contain the complete source or destination URL, page title, profile prompt, or uploaded image.</li>
+      </ul>
+      <p>The extension does not read webpage body text, passwords, form contents, cookies, or the content of other websites through injected content scripts. It does not access the Chrome browsing-history database.</p>
+
+      <h3>3. Destination websites and possible data sharing</h3>
+      <div class="notice"><strong>Important:</strong> If your destination URL template contains <code>{url}</code>, <code>{title}</code>, or <code>{domain}</code>, the corresponding source-page information is inserted into that destination URL when you launch it. The destination website and its service providers may receive and process that information as part of an ordinary browser visit, including through URL paths or query parameters.</div>
+      <p>The built-in example uses <code>chatgpt.com</code> as a destination and may include the current page URL in its <code>prompt</code> query parameter. This does not mean that the developer receives the information. The extension itself does not automatically submit a chat message, call an AI service API, or upload webpage content; the destination website independently controls how it handles a visited URL and any associated parameters.</p>
+      <p>Which third party receives information depends on the destination you configure. Its privacy policy applies to its processing, and browser requests can also include normal connection information such as your IP address. Some destination URLs may use HTTP rather than HTTPS; HTTP does not encrypt information in transit. Avoid placing sensitive information in URL templates, and prefer HTTPS destinations.</p>
+      <p>Each profile offers a setting to remove the source URL's query string and fragment before inserting <code>{url}</code>. This does not remove sensitive data embedded in the path, title, domain, or fixed template text. No URL data is transmitted to a configured destination merely by saving or previewing a profile; opening or testing a destination causes the normal browser request.</p>
+
+      <h3>4. Chrome permissions</h3>
+      <ul>
+        <li><code>activeTab</code>: to obtain relevant current-tab information after you invoke the extension.</li>
+        <li><code>storage</code>: to store settings, drafts, images, backup snapshots, errors, and temporary session state locally in Chrome.</li>
+        <li><code>system.display</code>: to determine screen bounds for user-selected window positioning.</li>
+        <li><code>tabs</code> (optional): requested when needed to find a recent eligible webpage tab from Options; you may decline this permission, in which case unavailable source values are omitted. Chrome allows you to manage or revoke it.</li>
+      </ul>
+      <p>The extension does not request location, contacts, microphone, camera, the Chrome history permission, or blanket website host access. Tab identifiers may be recorded temporarily within the current browser session to select a recent eligible tab; this is not a remote browsing-history service.</p>
+
+      <h3>5. Local storage, retention, and user controls</h3>
+      <p>Saved profiles, preferences, custom icons, incomplete editing drafts, one settings-restoration snapshot, a separate migration backup when needed, and a limited diagnostic history are kept in Chrome's local extension storage. The extension does not use Chrome Sync. Session-only tab and window tracking is kept separately and is not intended to survive a complete browser restart.</p>
+      <p>You can modify or reset profiles, clear local diagnostic entries, and export or import settings through Options. The exported JSON may contain the URLs, prompts, and icons you configured; it is saved to a location you choose and should be treated as a potentially sensitive file. A standard settings export does not include incomplete drafts, diagnostics, snapshots, or temporary window state.</p>
+      <p>Local data generally remains until you change or clear it, reset the extension's settings, clear extension storage, or uninstall the extension, subject to Chrome's storage behavior. Previously exported files must be deleted separately by you. Information already received by destination websites is governed by those sites' own policies and cannot be removed by clearing extension storage.</p>
+
+      <h3>6. Incognito mode and security</h3>
+      <p>Incognito use requires separate permission in Chrome. When enabled, the extension can use existing profiles to launch destinations in an incognito context. It does not persist new incognito error records in local diagnostics. Browser-session state may still be used while that session is running, and destination websites can still receive the information included in a launched URL.</p>
+      <p>Extension settings are stored through Chrome's extension storage APIs, and uploaded icons are processed locally. No storage or transmission mechanism is completely risk-free. Protect exported JSON files and avoid sharing URLs containing credentials, private tokens, or personal information.</p>
+
+      <h3>7. Children's privacy</h3>
+      <p>Split View Launcher is a general-purpose browser utility, not designed specifically for children. The developer does not intentionally collect children's personal information through the extension.</p>
+
+      <h3>8. Changes and contact</h3>
+      <p>We may revise this policy if the extension's features or information-handling practices change and will update the effective date when appropriate. For privacy questions, email <a href="mailto:pulipuli.chen@gmail.com">pulipuli.chen@gmail.com</a>. Developer profile: <a href="https://github.com/pulipulichen">github.com/pulipulichen</a>.</p>
+    </article>
+
+    <article id="traditional-chinese" lang="zh-Hant" aria-labelledby="chinese-title">
+      <h2 id="chinese-title">隱私權政策（繁體中文）</h2>
+      <h3>1. 概要</h3>
+      <p>Split View Launcher 是 Chrome 擴充功能，可按照使用者設定的 Profile，在 Chrome 支援時使用原生 Split View，或依使用者明確選擇的視窗模式開啟目標網站。使用者可在網址樣板中插入來源分頁的網址、標題或網域。</p>
+      <p>本擴充功能不需要註冊帳號，不使用開發者營運的伺服器、雲端同步、廣告、分析 SDK 或自動遙測。開發者不會透過本擴充功能收到使用者儲存在本機的 Profiles、瀏覽資訊、圖示或診斷紀錄。</p>
+
+      <h3>2. 擴充功能處理的資訊</h3>
+      <ul>
+        <li><strong>來源網頁資訊：</strong>使用者執行時目前分頁的網址、標題、網域；或從設定頁執行時，最近符合條件的分頁資訊。這些資訊用於組合目標網址及開啟指定網站。</li>
+        <li><strong>Profiles 與偏好設定：</strong>Profile 名稱、目標網址樣板、網址隱私模式、視窗模式、排序、預設 Profile、語言、最小視窗寬度、自訂圖示與上傳的圖示圖片。</li>
+        <li><strong>視窗與螢幕資訊：</strong>為了建立或還原使用者選擇的視窗配置，讀取視窗識別資訊、螢幕配置、可用範圍與視窗位置大小。</li>
+        <li><strong>本機診斷：</strong>最多保留最近 20 筆錯誤的時間、操作類別與錯誤代碼，不記錄完整來源或目標網址、網頁標題、提示詞或上傳圖片。</li>
+      </ul>
+      <p>本擴充功能不使用注入網頁的內容腳本讀取網頁正文、密碼、表單內容或 Cookie，也不讀取 Chrome 的瀏覽紀錄資料庫。</p>
+
+      <h3>3. 目標網站及可能的資料傳遞</h3>
+      <div class="notice"><strong>重要說明：</strong>若目標網址樣板包含 <code>{url}</code>、<code>{title}</code> 或 <code>{domain}</code>，使用者執行時，對應的來源網頁資訊會被代入目標網址。目標網站及其服務提供者可能透過一般網頁連線、網址路徑或查詢參數接收並處理這些資訊。</div>
+      <p>內建範例以 <code>chatgpt.com</code> 為目標網站，可能將目前網頁網址放在 <code>prompt</code> 查詢參數內。這不代表資料傳送給擴充功能開發者。本擴充功能本身不會自動送出聊天訊息、不呼叫 AI 服務 API，也不會上傳網頁正文；使用者開啟的目標網站如何處理網址及其參數，則由該網站自行決定。</p>
+      <p>實際接收資訊的第三方取決於使用者設定的目標網站，該網站的資料處理適用其自己的隱私權政策。一般瀏覽器請求也可能包含 IP 位址等連線資訊。使用者可以指定 HTTP 網址，但 HTTP 傳輸不加密；建議優先使用 HTTPS，並避免把敏感資訊放入網址樣板。</p>
+      <p>每個 Profile 都可以選擇在代入 <code>{url}</code> 前移除來源網址的 Query 與 Fragment。這不會移除仍存在於網址路徑、標題、網域或固定樣板文字中的敏感資訊。單純儲存或預覽 Profile 不會向目標網站傳送來源網址；真正開啟或測試目標網址時，才會產生一般瀏覽器連線。</p>
+
+      <h3>4. Chrome 權限</h3>
+      <ul>
+        <li><code>activeTab</code>：使用者主動執行擴充功能後，取得相關目前分頁資訊。</li>
+        <li><code>storage</code>：在 Chrome 本機儲存設定、草稿、圖示、備份快照、錯誤紀錄及工作階段暫存資訊。</li>
+        <li><code>system.display</code>：取得螢幕範圍，用於使用者選擇的視窗定位功能。</li>
+        <li><code>tabs</code>（選用）：需要從設定頁尋找最近可用的來源網頁時才詢問授權。使用者可以拒絕，無法讀取的來源變數會留空；也可以透過 Chrome 管理或撤銷權限。</li>
+      </ul>
+      <p>本擴充功能不要求定位、聯絡人、麥克風、相機、Chrome 瀏覽紀錄權限或全面的網站主機存取權限。為了找出最近使用的適用分頁，可能在目前瀏覽器工作階段暫存分頁識別碼；這不是遠端瀏覽歷史紀錄服務。</p>
+
+      <h3>5. 本機儲存、保留及使用者控制</h3>
+      <p>已儲存的 Profiles、偏好、自訂圖示、未完成草稿、最近一份設定還原快照、必要時獨立保留的資料遷移備份，以及有限筆數的錯誤紀錄，儲存在 Chrome 的擴充功能本機儲存空間。本擴充功能不使用 Chrome Sync。分頁與視窗追蹤資訊另外暫存在工作階段儲存空間，設計上不會跨完整瀏覽器重啟保留。</p>
+      <p>使用者可於設定頁修改或重設 Profiles、清除錯誤紀錄，以及匯出或匯入設定。匯出的 JSON 可能包含使用者設定的網址、提示詞及圖示，會儲存到使用者指定的位置，請視為可能包含敏感資訊的檔案。一般設定匯出不包含未完成草稿、診斷紀錄、快照或暫時的視窗狀態。</p>
+      <p>本機資料一般會保留到使用者修改、清除、重設、清除擴充功能儲存空間或解除安裝為止，實際情況依 Chrome 儲存機制而定。已匯出的檔案需由使用者另外刪除。目標網站已收到的資訊適用該網站的政策，無法透過清除本擴充功能的資料一併刪除。</p>
+
+      <h3>6. 無痕模式與安全</h3>
+      <p>無痕模式必須另外在 Chrome 中允許。啟用後，本擴充功能可使用現有設定在無痕環境開啟目標網址；無痕操作不會新增持久保存的本機錯誤診斷紀錄。工作階段內仍可能使用暫存狀態，且目標網站仍可能收到網址中包含的資訊。</p>
+      <p>本擴充功能透過 Chrome 擴充功能儲存 API 保存設定，並在本機處理上傳的圖示。任何儲存或傳輸方式都不能保證絕對安全。請妥善保管匯出的 JSON 檔案，避免在網址中加入帳號密碼、私人權杖或個人資訊。</p>
+
+      <h3>7. 兒童隱私</h3>
+      <p>Split View Launcher 是一般用途的瀏覽器工具，並非專為兒童設計。開發者不會透過本擴充功能刻意蒐集兒童個人資料。</p>
+
+      <h3>8. 政策變更與聯絡方式</h3>
+      <p>如果擴充功能或資料處理方式改變，本政策可能更新，必要時會調整生效日期。隱私權問題請寄信至 <a href="mailto:pulipuli.chen@gmail.com">pulipuli.chen@gmail.com</a>。開發者 GitHub：<a href="https://github.com/pulipulichen">github.com/pulipulichen</a>。</p>
+    </article>
+  </main>
+  <footer>© 2026 Pulipuli Chen · <a href="https://pages.pulipuli.info/">Pages home / 網站首頁</a> · <a href="https://github.com/pulipulichen/pages.pulipuli.info">Website source</a></footer>
+</body>
+</html>
