@@ -24,6 +24,7 @@ Official GitHub Pages website for pulipuli.info, hosting public project and appl
 
 ## App privacy pages
 
+- **Split View Launcher** (Chrome extension): [public privacy policy (English / 繁體中文)](https://pages.pulipuli.info/split-view-launcher/) · Published page: `split-view-launcher/index.html`
 - **Website Shortcut** (`info.pulipuli.app.websiteshortcut`): [public privacy policy](https://pages.pulipuli.info/info.pulipuli.app.websiteshortcut/)
 - **Canonical HTML source:** [Android-Website-Shortcut/google_play/privacy-policy.html](https://github.com/pulipulichen/Android-Website-Shortcut/blob/main/google_play/privacy-policy.html)
 - **Published mirror:** `info.pulipuli.app.websiteshortcut/index.html`
